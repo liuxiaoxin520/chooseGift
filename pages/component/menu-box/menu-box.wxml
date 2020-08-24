@@ -1,0 +1,8 @@
+<!--pages/component/loading-animation.wxml-->
+<view class="menuList-box" wx:if="{{menuList}}">
+  <view class="menuList flexAround" style="width: {{100 / menuListConfig.num}}%" wx:for="{{menuList}}" wx:key="menuList">
+    <image class="menuIcon" src="{{item.icon}}" mode="aspectFit" style="width:{{menuListConfig.num<=4?menuListConfig.maxWidthSize + 'rpx':menuListConfig.minWidthSize + 'rpx'}};height:{{menuListConfig.num<=4?menuListConfig.maxHeightSize + 'rpx':menuListConfig.minHeightSize + 'rpx'}}"
+    />
+    <view class="menuText">{{item.name}}</view>
+  </view>
+</view>

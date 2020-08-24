@@ -1,0 +1,5 @@
+/* pages/component/gift-animation.wxss */
+.menuList-box{display: flex;flex-wrap: wrap;background: white;padding: 16rpx 0}
+.menuList{display: flex;flex-direction: column;justify-content: center;align-items: center;margin: 14rpx 0;padding: 0;background: white;font-weight: normal}
+.menuIcon{display: block}
+.menuText{font-size: 26rpx;color: #333;margin-top: 10rpx}

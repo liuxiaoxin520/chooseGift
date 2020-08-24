@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<banner-scroll bannerList="{{bannerList}}" bannerConfig="{{bannerConfig}}"></banner-scroll>
+
+<!-- 菜单 -->
+<menu-box menuList="{{menuList}}" menuListConfig="{{menuListConfig}}"></menu-box>

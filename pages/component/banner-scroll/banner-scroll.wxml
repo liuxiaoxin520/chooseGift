@@ -1,0 +1,18 @@
+<!--pages/component/loading-animation.wxml-->
+<view class='banner_box' style="height:{{bannerConfig.height}}rpx;width:{{bannerConfig.width}}rpx;border-radius:{{bannerConfig.borderRadius}}rpx">
+  <swiper 
+    wx:if="{{bannerList!=''}}" 
+    style='height:100%;position:relative' 
+    duration="{{bannerConfig.duration}}" 
+    indicator-dots="{{bannerConfig.indicatorDots}}"
+    autoplay="{{bannerConfig.autoplay}}"
+    circular="{{bannerConfig.circular}}"
+    indicator-active-color="{{bannerConfig.activeColor}}"
+    interval= "{{bannerConfig.interval}}"
+    >
+    <swiper-item wx:for="{{bannerList}}" wx:key='bannerList' bindtap="{{bannerConfig.isPreview?'previewImage':''}}" data-index="{{index}}">
+      <image src="{{item.src}}" mode="aspectFill" class="slide-image" />
+    </swiper-item>
+  </swiper>
+  <image src="{{bannerConfig.defaultImg}}" wx:else mode="aspectFill" class="slide-image" />
+</view>

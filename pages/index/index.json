@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "帮礼挑",
+  "usingComponents": {
+    "banner-scroll": "/pages/component/banner-scroll/banner-scroll",
+    "menu-box": "/pages/component/menu-box/menu-box"
+  }
+}
